@@ -1,0 +1,156 @@
+@import "variables";
+.page{
+  header{
+    display: block;
+    height: 26%;
+    .header-menu{
+      position:fixed;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index:2;
+      width:1250px;
+      margin-top:70px;
+      text-align: center;
+      background-color: #ffffff;
+      height: 115px;
+      .region-header{
+        display:flex;
+        .navigation{
+          .navbar-nav{
+            height:100%;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            li{
+              margin-left: 20px;
+              .nav-link{
+                padding: 45px 0;
+                text-transform: uppercase;
+              }
+              .is-active{
+                padding-bottom:40px;
+                border-bottom: 5px solid $light-blue-2;
+              }
+
+              &:first-child{
+                background-image: url("../images/Homepage-menu.png");
+                background-repeat: no-repeat;
+                font-size: 0;
+                width:28px;
+                height:28px;
+                margin-left:30px;
+                background-position: center;
+                .nav-link{
+                  padding: 33px 0;
+                }
+              }
+            }
+          }
+        }
+        .block-social-media-links{
+          align-items: center;
+          display: flex;
+          margin-left:10px;
+          margin-right:10px;
+          margin-bottom:-10px;
+        }
+        .search-block-form{
+          align-items: center;
+          display: flex;
+          margin-bottom: 5px;
+          .form-item{
+            input{
+              width:171px;
+              border-radius: 0;
+              border: 1px solid $gray;
+              height:37px;
+            }
+          }
+          .form-actions{
+            input{
+              border-radius: 0;
+              border: 1px solid $gray;
+              background-image: url("../images/search.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 21px 21px;
+              font-size: 0;
+              width:37px;
+              height:37px;
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+    .header-background{
+      top:0;
+      .region-header-background-text{
+        position:absolute;
+        z-index:1;
+        top:28%;
+        left:25%;
+        #block-bgtexttitle-2{
+
+          .field--name-body{
+            p{
+              margin: 0px;
+              &:nth-child(1){
+                font-size:56px;
+                color: $white;
+              }
+              &:nth-child(2){
+                height:0;
+              }
+              &:nth-child(3){
+                margin-top:-26px;
+                margin-left:4px;
+                font-size:35px;
+                color: $dark-blue;
+              }
+            }
+          }
+        }
+        #block-headerbgtext{
+          .field{
+            max-width:320px;
+            margin-top: -7px;
+            text-transform: uppercase;
+            color:#6f9ccb;
+            font-size:13px;
+            letter-spacing: -0.35px;
+          }
+        }
+      }
+      .region-header-background{
+        position:relative;
+        img{
+          width:100%;
+          height: auto;
+        }
+      }
+
+    }
+  }
+}
+
+.block-system-branding-block{
+  .navbar-brand{
+    height:115px;
+    background-color: $dark-blue;
+    .site-title{
+      color: $light-blue;
+      text-transform: capitalize;
+      font-size: 30px;
+      padding: 0 39px;
+      &:first-letter{
+        text-transform: uppercase;
+      }
+    }
+    .site-slogan{
+      color: $white;
+      font-size:14px;
+    }
+  }
+}

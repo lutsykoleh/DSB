@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="65196440-8a17-449f-b896-ca00eb904f6d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/exam.libraries.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam.info.yml" beforeDir="false" afterPath="$PROJECT_DIR$/exam.info.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/heart-3510.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/flag/flag.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/node.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/page.html.twig" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YwYwhghlxXBeursxR9AZJu5leW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/oxit888/myproject/var/www/exam/web/themes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65196440-8a17-449f-b896-ca00eb904f6d" name="Changes" comment="" />
+      <created>1701438348893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701438348893</updated>
+      <workItem from="1701438349946" duration="2578000" />
+      <workItem from="1701674567312" duration="2023000" />
+      <workItem from="1701678219374" duration="1612000" />
+      <workItem from="1701679868295" duration="27000" />
+      <workItem from="1701679897580" duration="23000" />
+      <workItem from="1701679963715" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
