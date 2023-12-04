@@ -1,0 +1,13 @@
+footer {
+  padding: 0 !important;
+  background-color: #373645; }
+  footer .region-footer {
+    margin: 0 auto;
+    width: 1250px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: row !important;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=footer.css.map */
