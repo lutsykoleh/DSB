@@ -1,10 +1,13 @@
 @import "variables";
+body {
+  min-height: 100vh !important;
+}
 footer{
   padding: 0 !important;
   background-color: $dark-blue;
 .region-footer{
   margin: 0 auto;
-  width:1250px;
+  max-width:1250px;
   text-align: center;
   align-items: center;
   padding: 0;

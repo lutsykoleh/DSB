@@ -9,8 +9,15 @@ ckeditor_stylesheets:
   - css/style.css
 ckeditor5-stylesheets:
   - css/ck5style.css
+
+stylesheets-remove:
+  - 'web/themes/contrib/bootstrap5/dist/bootstrap/5.3.2/scss/_pagination.scss'
+
+
 regions:
   header: Header
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   header_background_text: 'background text'
   header_background: Background
   primary_menu: 'Primary menu'

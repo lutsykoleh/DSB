@@ -1,0 +1,322 @@
+@import "variables";
+@import "mixin";
+
+.page {
+  .main-content {
+    .container {
+      max-width: 1250px;
+
+      main {
+        align-items: center;
+        text-align: center;
+        article {
+          .layout {
+            .layout__region {
+              .block-views-blockabout-block-1 {
+                h2 {
+                  @include homepage-title
+                }
+
+                margin-top: 105px;
+                margin-bottom: 100px;
+                max-width: 1250px;
+
+                .contextual-region {
+                  .view-content {
+                    .views-row {
+                      width: 100%;
+                      display: flex;
+                      text-transform: uppercase;
+                      text-align: center;
+                      align-items: center;
+                      justify-content: space-between;
+                      border-top: 5px solid $dark-blue;
+                      border-bottom: 5px solid $light-blue;
+
+                      .views-field-title {
+                        font-size: 25px;
+                        font-weight: bold;
+                      }
+
+                      .views-field-body {
+                        color: $gray;
+                        font-size: 19px;
+                      }
+
+                      .views-field-view-node {
+                        @include button-more($light-blue);
+                        margin: 12px 0;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .block-views-blockservice-block-block-1 {
+                h2 {
+                  @include homepage-title
+                }
+
+                .contextual-region {
+                  padding-top: 30px;
+                  padding-bottom: 35px;
+                  .view-id-service_block {
+                    .view-content {
+                      .views-view-grid {
+                        .row {
+                          .views-col {
+                            @include service-card;
+                            margin-bottom: 30px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .block-views-blockprojects-block-block-1 {
+                &:before {
+                  content: "";
+                  z-index: -1;
+                  top: 56px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 99.1vw;
+                  height: calc(100% - 48px);
+                  position: absolute;
+                  background: repeating-linear-gradient(-45deg, #d0d0d0, #d0d0d0 1px, #fff 2px, #fff 10px);
+                }
+                h2 {
+                  @include homepage-title
+                }
+
+                .contextual-region {
+                  padding-top: 40px;
+                  padding-bottom: 60px;
+                  .view-content {
+                    .views-row {
+                      gap: 16px;
+                      justify-content: center;
+                      .views-col {
+                        background-color: $white;
+                        max-width: 290px;
+                        @include project-card;
+                        border-bottom: 1px solid $dark-blue;
+                      }
+                    }
+                  }
+                  .pager{
+                    .pagination{
+                      .is-active{
+                        border: 1px solid $gray;
+                        border-radius: 50%;
+                        background-color:$gray;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .block-views-blockteam-block-block-1 {
+                margin-top: 30px;
+                h2 {
+                  @include homepage-title
+                }
+
+                .contextual-region {
+                  .view-id-team_block {
+                    .view-content {
+                      .views-view-grid {
+                        .row {
+                          margin-top: 25px;
+                          margin-bottom: 150px;
+
+                          .views-col {
+                            @include team-card;
+                            margin-bottom: 30px;
+                          }
+                        }
+                      }
+
+                    }
+                  }
+                }
+              }
+
+              .block-views-blocknews-block-block-1 {
+                max-width:1250px;
+                &:before {
+                  content: "";
+                  z-index: -1;
+                  top: 56px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 99.1vw;
+                  height: calc(100% - 48px);
+                  position: absolute;
+                  background: repeating-linear-gradient(-45deg, #d0d0d0, #d0d0d0 1px, #fff 2px, #fff 10px);
+                }
+                h2 {
+                  @include homepage-title
+                }
+
+                .contextual-region {
+                  .view-news-block {
+                    .view-filters {
+                      .form--inline {
+                        display: flex;
+                        margin-top:25px;
+                        background-color: $bg-gray;
+                        max-width: 424px;
+
+                        .form-item {
+                          max-width: 340px;
+                          margin: 5px 4px 5px 3px;
+
+                          input {
+                            border: 1px solid $gray;
+
+                            &::placeholder {
+                              color: $gray;
+                            }
+                          }
+                        }
+
+                        .form-actions {
+                          margin: 7px 0 0 0;
+
+                          input {
+                            background-color: $lighting-blue;
+                            color: $white;
+                            border: none;
+                          }
+                        }
+                      }
+                    }
+
+                    .view-content {
+                      .views-row {
+                        justify-content: center;
+                        margin-top:10px;
+                        gap: 10px;
+                        margin-bottom: 60px;
+                        .views-col {
+                          max-width:600px;
+                          background-color: #fff;
+                          padding: 0;
+                          @include news-card;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .block-views-blockclients-block-block-1 {
+              h2 {
+                margin-top: 33px;
+                margin-bottom: 50px;
+                @include homepage-title
+              }
+              .contextual-region{
+                margin-bottom: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 800px) {
+  .page {
+    .main-content {
+      .container {
+        max-width: 1250px;
+
+        main {
+          article {
+            .layout {
+              .layout__region {
+                .block-views-blockabout-block-1 {
+
+                  margin-top: 50px;
+                  margin-bottom: 50px;
+
+                  .contextual-region {
+                    .view-content {
+                      .views-row {
+                        .views-field-title {
+                          font-size: 20px;
+                          font-weight: bold;
+                        }
+                        .views-field-body {
+                          color: $gray;
+                          font-size: 14px;
+                        }
+                        .views-field-view-node {
+                          @include button-more($light-blue);
+                          margin: 12px 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width:420px){
+  .page {
+    .main-content {
+      .container {
+        max-width: 1250px;
+
+        main {
+          article {
+            .layout {
+              .layout__region {
+                .block-views-blockabout-block-1 {
+
+                  margin-top: 50px;
+                  margin-bottom: 50px;
+
+                  .contextual-region {
+                    .view-content {
+                      .views-row {
+                        .views-field-title {
+                          font-size: 16px;
+                          font-weight: bold;
+                        }
+                        .views-field-body {
+                          color: $gray;
+                          font-size: 13px;
+                        }
+                        .views-field-view-node {
+                          @include button-more($light-blue);
+                          margin: 12px 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

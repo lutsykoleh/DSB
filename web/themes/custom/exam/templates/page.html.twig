@@ -1,7 +1,42 @@
+{%
+  set nav_classes = 'navbar navbar-expand-lg' ~
+  (b5_navbar_schema != 'none' ? " navbar-#{b5_navbar_schema}" : ' ') ~
+  (b5_navbar_schema != 'none' ? (b5_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b5_navbar_bg_schema != 'none' ? " bg-#{b5_navbar_bg_schema}" : ' ')
+%}
+
+{%
+  set footer_classes = ' ' ~
+  (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
+  (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
+%}
+
 <div class="page">
   <header role="banner">
     <div class="header-menu">
       {{ page.header }}
+
+      {% if page.nav_branding or page.nav_main or page.nav_additional %}
+        <nav class="{{ nav_classes }}">
+          <div class="{{ b5_top_container }} d-flex">
+            {{ page.nav_branding }}
+
+            {% if page.nav_main or page.nav_additional %}
+              <button class="navbar-toggler collapsed mr-auto" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+                {{ page.nav_main }}
+                {{ page.nav_additional }}
+              </div>
+            {% endif %}
+          </div>
+        </nav>
+      {% endif %}
     </div>
     <div class="header-background">
       {{ page.header_background_text }}
@@ -11,14 +46,16 @@
   {{ page.primary_menu }}
   {{ page.highlighted }}
   <div class="main-content">
-    <main role="main">
-      {{ page.content }}
-    </main>
+    <div class="container">
+      <main role="main">
+        {{ page.content }}
+      </main>
+    </div>
   </div>
   <div class="slider">
     {{ page.slider }}
   </div>
-  <footer role="contentinfo">
+  <footer class="mt-auto" role="contentinfo">
     {{ page.footer }}
   </footer>
 </div>

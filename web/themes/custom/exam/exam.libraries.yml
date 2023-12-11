@@ -4,4 +4,5 @@ global-styling:
       css/style.css: {}
     component:
       css/header.css: {}
+      css/homepage.css: {}
       css/footer.css: {}
