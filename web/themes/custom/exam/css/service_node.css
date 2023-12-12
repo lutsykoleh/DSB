@@ -1,0 +1,23 @@
+.page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--onecol .layout__region--content {
+  margin-bottom: 50px; }
+  .page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeservicetitle {
+    margin-top: -31px; }
+    .page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeservicetitle span {
+      font-size: 2em;
+      background-color: white;
+      padding: 0px 5px;
+      text-transform: uppercase; }
+    @media (max-width: 500px) {
+      .page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeservicetitle {
+        margin-top: -25px; }
+        .page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeservicetitle span {
+          font-size: 1.5em; } }
+.page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeservicefield-images {
+  margin-bottom: 30px; }
+.page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeservicecreated {
+  font-size: 20px; }
+.page .main-content main .region .block-system-main-block article.node--service-full .node__content .layout--twocol-section .layout__region--second .block-field-blocknodeservicebody .field p {
+  font-size: 16px;
+  font-weight: 500; }
+
+/*# sourceMappingURL=service_node.css.map */

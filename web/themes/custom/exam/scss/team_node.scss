@@ -1,0 +1,52 @@
+@import "variables";
+.page{
+  .main-content{
+    main{
+      .region{
+        .block-system-main-block{
+          .node--team-full{
+            .node__content{
+              .layout--onecol{
+                margin: 0 auto;
+                max-width:310px;
+                .block-field-blocknodeteamtitle{
+                  margin-top: -31px;
+                  span{
+                    font-size:2em;
+                    padding: 0 5px;
+                    background-color: $white;
+                  }
+                  @media(max-width:500px){
+                    margin-top: -25px;
+                    span{
+                      font-size: 1.5em;
+                    }
+                  }
+                }
+                .block-field-blocknodeteamfield-team-img{
+                  margin-bottom: 20px;
+                }
+                .block-field-blocknodeteamfield-team-posi{
+                  font-size: 16px;
+                  margin-bottom: 15px;
+                }
+                .block-field-blocknodeteamfield-team-social {
+                  text-align: start;
+                  margin-left: 15px;
+                }
+                .block-extra-field-blocknodeteamflag-like {
+                  text-align: end;
+                  margin-top: -31px;
+                  margin-right: 10px;
+                  a {
+                    margin-right: 45px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

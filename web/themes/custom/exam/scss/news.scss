@@ -1,0 +1,58 @@
+@import "mixin";
+@import "variables";
+.page{
+  .main-content{
+    main{
+      .block-system{
+        h2{
+          padding-top: 1px;
+          @include homepage-title
+        }
+        .contextual-region{
+          .view-news-block{
+            .view-content{
+              .views-row{
+                .views-col {
+                  @include news-card;
+                  margin-bottom: 30px;
+                }
+              }
+            }
+            .view-filters {
+              margin-bottom: 60px;
+              .form--inline {
+                display: flex;
+                margin-top:25px;
+                background-color: $bg-gray;
+                max-width: 424px;
+
+                .form-item {
+                  max-width: 340px;
+                  margin: 5px 4px 5px 3px;
+
+                  input {
+                    border: 1px solid $gray;
+
+                    &::placeholder {
+                      color: $gray;
+                    }
+                  }
+                }
+
+                .form-actions {
+                  margin: 7px 0 0 0;
+
+                  input {
+                    background-color: $lighting-blue;
+                    color: $white;
+                    border: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "mixin";
+.page {
+  .main-content {
+    container{
+      main {
+        .block-system {
+          h2 {
+            span:not(.field--label-hidden) {
+              @include homepage-title
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,18 +1,23 @@
 @import "variables";
-body {
-  min-height: 100vh !important;
-}
-footer{
-  padding: 0 !important;
-  background-color: $dark-blue;
-.region-footer{
-  margin: 0 auto;
-  max-width:1250px;
-  text-align: center;
-  align-items: center;
-  padding: 0;
-  flex-direction: row !important;
-  justify-content: space-between;
-}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  footer {
+    padding: 0 !important;
+    background-color: $dark-blue;
+
+    .region-footer {
+      margin: 0 auto;
+      max-width: 1250px;
+      text-align: center;
+      align-items: center;
+      padding: 0;
+      flex-direction: row !important;
+      justify-content: space-between;
+    }
+  }
 }
 

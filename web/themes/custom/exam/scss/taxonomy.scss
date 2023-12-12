@@ -1,0 +1,11 @@
+@import "mixin";
+.view-taxonomy-term{
+  .view-content{
+    .views-row{
+      .views-col{
+        @include project-card;
+        margin-bottom:20px;
+      }
+    }
+  }
+}

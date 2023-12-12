@@ -1,0 +1,78 @@
+@import "variables";
+.page{
+  .main-content{
+    main{
+      .region{
+        .block-system-main-block{
+          article.node--news-full{
+            .node__content{
+              .layout--onecol{
+                .layout__region--content{
+                  .block-field-blocknodenewstitle{
+                    margin-top: -31px;
+                    span{
+                      font-size:2em;
+                      background-color: white;
+                      padding: 0px 5px;
+                      text-transform: uppercase;
+                    }
+                    @media(max-width:500px){
+                      margin-top: -25px;
+                      span{
+                        font-size: 1.5em;
+                      }
+                    }
+                  }
+                  margin-bottom: 50px;
+                }
+              }
+              .layout--twocol-section{
+                margin-bottom: 50px;
+                .layout__region--first{
+                  .block-field-blocknodenewsfield-creator-img{
+                    margin-bottom: 30px;
+                  }
+                  .block-field-blocknodenewsfield-writer-name{
+                    font-size:20px;
+                    font-weight: bold;
+                    color: $light-blue;
+                    text-transform: uppercase;
+                  }
+                }
+                .layout__region--second{
+                  display:flex;
+                  flex-direction: column;
+                  .block-field-blocknodenewsfield-news-taxonomy{
+                    text-align: end;
+                    .field{
+                      margin-right: 20px;
+                      color:$light-blue;
+                      text-transform: uppercase;
+                    }
+                    margin-bottom: 20px;
+                  }
+                  .block-field-blocknodenewsbody{
+                    .field{
+                      p{
+                        font-size: 16px;
+                        font-weight: 400;
+
+                      }
+                    }
+                  }
+                  .block-field-blocknodenewsrevision-timestamp{
+                    text-align: end;
+                    .field{
+                      text-transform: uppercase;
+                      color: $dark-blue;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

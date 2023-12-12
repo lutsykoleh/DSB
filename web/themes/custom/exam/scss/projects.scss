@@ -1,0 +1,22 @@
+@import "mixin";
+@import "variables";
+.page{
+  .main-content{
+    main{
+      .block-system{
+        .contextual-region{
+          .view-all-projects{
+            .view-content{
+              .views-row{
+                .views-col {
+                  @include project-card;
+                  margin-bottom: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

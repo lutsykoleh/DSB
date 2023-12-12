@@ -1,0 +1,30 @@
+.page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol {
+  margin: 0 auto;
+  max-width: 310px; }
+  .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-field-blocknodeteamtitle {
+    margin-top: -31px; }
+    .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-field-blocknodeteamtitle span {
+      font-size: 2em;
+      padding: 0 5px;
+      background-color: #fff; }
+    @media (max-width: 500px) {
+      .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-field-blocknodeteamtitle {
+        margin-top: -25px; }
+        .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-field-blocknodeteamtitle span {
+          font-size: 1.5em; } }
+  .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-field-blocknodeteamfield-team-img {
+    margin-bottom: 20px; }
+  .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-field-blocknodeteamfield-team-posi {
+    font-size: 16px;
+    margin-bottom: 15px; }
+  .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-field-blocknodeteamfield-team-social {
+    text-align: start;
+    margin-left: 15px; }
+  .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-extra-field-blocknodeteamflag-like {
+    text-align: end;
+    margin-top: -31px;
+    margin-right: 10px; }
+    .page .main-content main .region .block-system-main-block .node--team-full .node__content .layout--onecol .block-extra-field-blocknodeteamflag-like a {
+      margin-right: 45px; }
+
+/*# sourceMappingURL=team_node.css.map */

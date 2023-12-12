@@ -14,7 +14,7 @@
 
 <div class="page">
   <header role="banner">
-    <div class="header-menu">
+    <div class="header-menu {{ page.header_background ? 'position-fixed' : '' }}">
       {{ page.header }}
 
       {% if page.nav_branding or page.nav_main or page.nav_additional %}
@@ -55,7 +55,11 @@
   <div class="slider">
     {{ page.slider }}
   </div>
-  <footer class="mt-auto" role="contentinfo">
-    {{ page.footer }}
-  </footer>
+  {% if page.footer %}
+    <footer class="mt-auto {{ footer_classes }}">
+      <div class="{{ b5_top_container }}">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
 </div>

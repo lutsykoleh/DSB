@@ -1,0 +1,27 @@
+@import "mixin";
+@import "variables";
+.page{
+  .main-content{
+    main{
+      .block-system{
+        h2{
+          span:not(.field--label-hidden){
+            @include homepage-title
+          }
+        }
+        .contextual-region{
+          .view-all-services{
+            .view-content{
+              .views-row{
+                .views-col {
+                  @include service-card;
+                  margin-bottom: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

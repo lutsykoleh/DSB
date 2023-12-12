@@ -1,0 +1,22 @@
+@import "mixin";
+@import "variables";
+.page{
+  .main-content{
+    main{
+      .block-system{
+        .contextual-region{
+          .view-all-team{
+            .view-content{
+              .views-row{
+                .views-col {
+                  @include team-card;
+                  margin: 0 auto 30px auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--onecol .layout__region--content {
+  margin-bottom: 50px; }
+  .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeprojectstitle {
+    margin-top: -31px; }
+    .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeprojectstitle span {
+      font-size: 2em;
+      background-color: white;
+      padding: 0px 5px;
+      text-transform: uppercase; }
+    @media (max-width: 500px) {
+      .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeprojectstitle {
+        margin-top: -25px; }
+        .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--onecol .layout__region--content .block-field-blocknodeprojectstitle span {
+          font-size: 1.5em; } }
+.page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeprojectsfield-project-image {
+  margin-bottom: 30px; }
+.page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeprojectsfield-tags {
+  margin-bottom: 15px; }
+  .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeprojectsfield-tags a {
+    text-decoration: none; }
+  .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeprojectsfield-tags a[href="/taxonomy/term/1"] {
+    color: #1bbc9b; }
+  .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeprojectsfield-tags a[href="/taxonomy/term/2"] {
+    color: #e84c3d; }
+  .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeprojectsfield-tags a[href="/taxonomy/term/3"] {
+    color: #9b58b5; }
+  .page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--first .block-field-blocknodeprojectsfield-tags a[href="/taxonomy/term/4"] {
+    color: #28a9e0; }
+.page .main-content main .region .block-system-main-block .node--projects-full .node__content .layout--twocol-section .layout__region--second .block-field-blocknodeprojectsbody .field p {
+  font-size: 16px;
+  font-weight: 500; }
+
+/*# sourceMappingURL=project_node.css.map */
