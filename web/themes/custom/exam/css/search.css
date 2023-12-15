@@ -38,6 +38,22 @@
     color: #cccccc; }
   .page .main-content .region .item-list .search-results div.search-result__snippet-info .search-result__info {
     display: none; }
+.page .main-content .region .pager .pager .pagination {
+  background-color: transparent;
+  margin: 60px auto;
+  max-width: 1250px;
+  justify-content: center; }
+  .page .main-content .region .pager .pager .pagination .page-link {
+    padding: 6px 12px;
+    color: #000;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent; }
+  .page .main-content .region .pager .pager .pagination .page-item.disabled {
+    display: none; }
+  .page .main-content .region .pager .pager .pagination .page-item.is-active a, .page .main-content .region .pager .pager .pagination .page-item.active a {
+    background-color: #cccccc;
+    z-index: 1; }
 
 @media (max-width: 405px) {
   .page .main-content .region form.search-form #edit-basic .form-item input {

@@ -8,7 +8,7 @@
           padding-top: 1px;
           @include homepage-title
         }
-        .contextual-region{
+        .views-element-container{
           .view-news-block{
             .view-content{
               .views-row{
@@ -18,8 +18,9 @@
                 }
               }
             }
+            @include pagination;
             .view-filters {
-              margin-bottom: 60px;
+              margin-bottom: 0px;
               .form--inline {
                 display: flex;
                 margin-top:25px;
@@ -49,6 +50,12 @@
                   }
                 }
               }
+            }
+            .view-empty{
+              font-size: 20px;
+              padding-bottom: 75px;
+              margin-top: 50px;
+              font-weight: bold;
             }
           }
         }

@@ -1,10 +1,12 @@
 @import "mixin";
-.view-taxonomy-term{
-  .view-content{
-    .views-row{
-      .views-col{
-        @include project-card;
-        margin-bottom:20px;
+.taxonomy-term{
+  .block-views-blockservice-term-block-1{
+    .view-service-term{
+      .views-row{
+        .views-col{
+          @include project-card;
+          margin-bottom:20px;
+        }
       }
     }
   }

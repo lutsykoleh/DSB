@@ -68,7 +68,7 @@
   flex-direction: column;
   align-items: center;
   .views-field-field-project-image {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     width: 100%;
   }
   .views-field-title {
@@ -81,6 +81,21 @@
       text-decoration: none;
     }
 
+    a[href="/services/tags/web-development"] {
+      color: #1bbc9b;
+    }
+
+    a[href="/services/tags/app-development"] {
+      color: #e84c3d;
+    }
+
+    a[href="/services/tags/php-development"] {
+      color: #9b58b5;
+    }
+
+    a[href="/services/tags/drupal-project"] {
+      color: #28a9e0;
+    }
     a[href="/taxonomy/term/1"] {
       color: #1bbc9b;
     }
@@ -136,6 +151,15 @@
   .block-field-blocknodeteamfield-team-social {
     text-align: start;
     margin-left: 15px;
+    .social-media-links--platforms{
+      li{
+        a{
+          svg{
+            color:$light-blue;
+          }
+        }
+      }
+    }
   }
   .block-extra-field-blocknodeteamflag-like {
     text-align: end;
@@ -246,6 +270,7 @@
           margin-left: auto;
           text-transform: uppercase;
           color: $gray;
+          margin-right: 18px;
         }
       }
     }
@@ -264,6 +289,7 @@
           font-size: 24px;
           margin: 0 0 20px 10px;
           text-transform: uppercase;
+          text-align: start;
         }
 
         .block-field-blocknodenewsbody {
@@ -271,7 +297,7 @@
           text-align: justify;
           letter-spacing: -1px;
           text-transform: uppercase;
-          margin: 0 20px 5px 10px;
+          margin: 0 18px 15px 10px;
           line-height: 15px;
 
           p {
@@ -284,7 +310,7 @@
           justify-content: flex-end;
           max-width: 120px;
           margin-left: auto;
-          margin-right: 5px;
+          margin-right: 21px;
           @include button-more($dark-blue);
         }
       }
@@ -335,6 +361,7 @@
             text-transform: uppercase;
             color: $gray;
             font-size: 13px;
+            margin-right: 18px;
           }
 
           border-bottom: 1px solid $gray;
@@ -372,6 +399,7 @@
           }
 
           .block-extra-field-blocknodenewslinks {
+            margin-bottom: 15px;
           }
         }
       }
@@ -424,4 +452,33 @@
       }
     }
   }
+
+@mixin pagination{
+  .pager {
+    .pagination {
+      background-color: transparent;
+      margin: 60px auto;
+      max-width: 1250px;
+      justify-content: center;
+
+      .page-link {
+        padding: 6px 12px;
+        color: $black;
+        border-radius: 50%;
+        border-color: transparent;
+        background-color: transparent;
+      }
+
+      .page-item.disabled{
+        display:none;
+      }
+      .page-item.is-active, .page-item.active{
+        a{
+          background-color: $gray;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
 

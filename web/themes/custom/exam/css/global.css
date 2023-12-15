@@ -16,4 +16,7 @@
     height: 1px;
     background-image: linear-gradient(to right, #cccccc 42%, transparent 40%, transparent 58%, #cccccc 42%); }
 
+p {
+  margin-bottom: 0 !important; }
+
 /*# sourceMappingURL=global.css.map */

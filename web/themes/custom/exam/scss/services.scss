@@ -9,7 +9,7 @@
             @include homepage-title
           }
         }
-        .contextual-region{
+        .views-element-container{
           .view-all-services{
             .view-content{
               .views-row{
@@ -19,6 +19,7 @@
                 }
               }
             }
+            @include pagination;
           }
         }
       }

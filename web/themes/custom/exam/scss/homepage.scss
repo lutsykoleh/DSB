@@ -5,22 +5,25 @@
   .main-content {
     .container {
       max-width: 1250px;
+
       main {
         align-items: center;
         text-align: center;
-        .block-system-main-block{
-          h2{
-            span.field--name-title{
-              display:none;
+
+        .block-system-main-block {
+          h2 {
+            span.field--name-title {
+              display: none;
             }
           }
+
           article {
             .layout {
               .layout__region {
                 .block-views-blockabout-block-1 {
                   h2 {
-                    span:not(.field--label-hidden){
-                    @include homepage-title
+                    span:not(.field--label-hidden) {
+                      @include homepage-title
                     }
                   }
 
@@ -28,7 +31,7 @@
                   margin-bottom: 100px;
                   max-width: 1250px;
 
-                  .contextual-region {
+                  .view-about {
                     .view-content {
                       .views-row {
                         width: 100%;
@@ -64,17 +67,16 @@
                     @include homepage-title
                   }
 
-                  .contextual-region {
+                  .view-service-block {
                     padding-top: 30px;
                     padding-bottom: 35px;
-                    .view-id-service_block {
-                      .view-content {
-                        .views-view-grid {
-                          .row {
-                            .views-col {
-                              @include service-card;
-                              margin-bottom: 30px;
-                            }
+
+                    .view-content {
+                      .views-view-grid {
+                        .row {
+                          .views-col {
+                            @include service-card;
+                            margin-bottom: 30px;
                           }
                         }
                       }
@@ -83,28 +85,33 @@
                 }
 
                 .block-views-blockprojects-block-block-1 {
-                  &:before {
-                    content: "";
-                    z-index: -1;
-                    top: 56px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 99.1vw;
-                    height: calc(100% - 48px);
-                    position: absolute;
-                    background: repeating-linear-gradient(-45deg, #d0d0d0, #d0d0d0 1px, #fff 2px, #fff 10px);
-                  }
+                  position: relative;
+
                   h2 {
                     @include homepage-title
                   }
 
-                  .contextual-region {
+                  > div {
+                    &:before {
+                      position: absolute;
+                      width: 99.1vw;
+                      height: calc(100% - 45px);
+                      content: "";
+                      transform: translateX(-50%);
+                      background: repeating-linear-gradient(-45deg, $gray, $gray 1px, $white 2px, $white 10px);
+                      z-index: -5;
+                    }
+                  }
+
+                  .view-projects-block {
                     padding-top: 40px;
                     padding-bottom: 60px;
+
                     .view-content {
                       .views-row {
                         gap: 16px;
                         justify-content: center;
+
                         .views-col {
                           background-color: $white;
                           max-width: 290px;
@@ -113,111 +120,113 @@
                         }
                       }
                     }
-                    .pager{
-                      .pagination{
-                        .is-active{
-                          border: 1px solid $gray;
-                          border-radius: 50%;
-                          background-color:$gray;
-                        }
-                      }
-                    }
+                    @include pagination
                   }
                 }
 
                 .block-views-blockteam-block-block-1 {
                   margin-top: 30px;
+
                   h2 {
                     @include homepage-title
                   }
 
-                  .contextual-region {
-                    .view-id-team_block {
-                      .view-content {
-                        .views-view-grid {
-                          .row {
-                            margin-top: 25px;
-                            margin-bottom: 150px;
+                  .view-id-team_block {
+                    .view-content {
+                      .views-view-grid {
+                        .row {
+                          margin-top: 25px;
+                          margin-bottom: 150px;
 
-                            .views-col {
-                              @include team-card;
-                              margin-bottom: 30px;
-                            }
+                          .views-col {
+                            @include team-card;
+                            margin: 0 auto 30px auto;
                           }
                         }
-
                       }
+
                     }
                   }
                 }
 
                 .block-views-blocknews-block-block-1 {
-                  max-width:1250px;
-                  &:before {
-                    content: "";
-                    z-index: -1;
-                    top: 56px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 99.1vw;
-                    height: calc(100% - 48px);
-                    position: absolute;
-                    background: repeating-linear-gradient(-45deg, #d0d0d0, #d0d0d0 1px, #fff 2px, #fff 10px);
-                  }
+                  max-width: 1250px;
+                  position: relative;
+
                   h2 {
                     @include homepage-title
                   }
 
-                  .contextual-region {
-                    .view-news-block {
-                      .view-filters {
-                        .form--inline {
-                          display: flex;
-                          margin-top:25px;
-                          background-color: $bg-gray;
-                          max-width: 424px;
+                  > div {
+                    &:before {
+                      position: absolute;
+                      width: 99.1vw;
+                      height: calc(100% - 45px);
+                      content: "";
+                      transform: translateX(-50%);
+                      background: repeating-linear-gradient(-45deg, $gray, $gray 1px, $white 2px, $white 10px);
+                      z-index: -5;
+                    }
+                  }
 
-                          .form-item {
-                            max-width: 340px;
-                            margin: 5px 4px 5px 3px;
+                  .view-news-block {
+                    .view-filters {
+                      padding-top:10px;
+                      .form--inline {
+                        display: flex;
+                        margin-top: 0px;
+                        background-color: $bg-gray;
+                        max-width: 424px;
 
-                            input {
-                              border: 1px solid $gray;
+                        .form-item {
+                          max-width: 340px;
+                          margin: 5px 4px 5px 3px;
 
-                              &::placeholder {
-                                color: $gray;
-                              }
-                            }
-                          }
+                          input {
+                            border: 1px solid $gray;
 
-                          .form-actions {
-                            margin: 7px 0 0 0;
-
-                            input {
-                              background-color: $lighting-blue;
-                              color: $white;
-                              border: none;
+                            &::placeholder {
+                              color: $gray;
                             }
                           }
                         }
-                      }
 
-                      .view-content {
-                        .views-row {
-                          justify-content: center;
-                          margin-top:10px;
-                          gap: 10px;
-                          margin-bottom: 60px;
-                          .views-col {
-                            max-width:600px;
-                            background-color: #fff;
-                            padding: 0;
-                            @include news-card;
+                        .form-actions {
+                          margin: 7px 0 0 0;
+
+                          input {
+                            background-color: $lighting-blue;
+                            color: $white;
+                            border: none;
                           }
                         }
                       }
                     }
+
+                    .view-content {
+                      .views-row {
+                        justify-content: center;
+                        margin-top: 10px;
+                        gap: 10px;
+                        margin-bottom: 30px;
+
+                        .views-col {
+                          max-width: 600px;
+                          background-color: #fff;
+                          padding: 0;
+                          @include news-card;
+                        }
+                      }
+                    }
+
+                    .view-empty{
+                      font-size: 20px;
+                      padding-bottom: 75px;
+                      margin-top: 50px;
+                      font-weight: bold;
+                    }
                   }
+
                 }
               }
 
@@ -227,7 +236,8 @@
                   margin-bottom: 50px;
                   @include homepage-title
                 }
-                .contextual-region{
+
+                .view-clients-block {
                   margin-bottom: 120px;
                 }
               }
@@ -245,25 +255,29 @@
     .main-content {
       .container {
         max-width: 1250px;
+
         main {
-          .block-system-main-block{
+          .block-system-main-block {
             article {
               .layout {
                 .layout__region {
                   .block-views-blockabout-block-1 {
                     margin-top: 50px;
                     margin-bottom: 50px;
-                    .contextual-region {
+
+                    .view-about {
                       .view-content {
                         .views-row {
                           .views-field-title {
                             font-size: 20px;
                             font-weight: bold;
                           }
+
                           .views-field-body {
                             color: $gray;
                             font-size: 14px;
                           }
+
                           .views-field-view-node {
                             @include button-more($light-blue);
                             margin: 12px 0;
@@ -283,36 +297,39 @@
 }
 
 
-
-@media(max-width:420px){
+@media(max-width: 420px) {
   .page {
     .main-content {
       .container {
         max-width: 1250px;
 
         main {
-          article {
-            .layout {
-              .layout__region {
-                .block-views-blockabout-block-1 {
+          .block-system-main-block {
+            article {
+              .layout {
+                .layout__region {
+                  .block-views-blockabout-block-1 {
 
-                  margin-top: 50px;
-                  margin-bottom: 50px;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
 
-                  .contextual-region {
-                    .view-content {
-                      .views-row {
-                        .views-field-title {
-                          font-size: 16px;
-                          font-weight: bold;
-                        }
-                        .views-field-body {
-                          color: $gray;
-                          font-size: 13px;
-                        }
-                        .views-field-view-node {
-                          @include button-more($light-blue);
-                          margin: 12px 0;
+                    .view-about {
+                      .view-content {
+                        .views-row {
+                          .views-field-title {
+                            font-size: 16px;
+                            font-weight: bold;
+                          }
+
+                          .views-field-body {
+                            color: $gray;
+                            font-size: 13px;
+                          }
+
+                          .views-field-view-node {
+                            @include button-more($light-blue);
+                            margin: 12px 0;
+                          }
                         }
                       }
                     }
@@ -327,34 +344,38 @@
   }
 }
 
-@media(max-width:370px){
+@media(max-width: 370px) {
   .page {
     .main-content {
       .container {
         max-width: 1250px;
+
         main {
-          .block-system-main-block{
+          .block-system-main-block {
             article {
               .layout {
                 .layout__region {
                   .block-views-blockabout-block-1 {
                     margin-top: 50px;
                     margin-bottom: 50px;
-                    .contextual-region {
+
+                    .view-about {
                       .view-content {
                         .views-row {
                           .views-field-title {
                             font-size: 20px;
                             font-weight: bold;
                           }
+
                           .views-field-body {
                             color: $gray;
                             font-size: 12px;
                           }
+
                           .views-field-view-node {
                             @include button-more($light-blue);
                             margin: 12px 0;
-                            font-size:14px;
+                            font-size: 14px;
                           }
                         }
                       }

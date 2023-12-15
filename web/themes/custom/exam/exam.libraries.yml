@@ -19,3 +19,6 @@ global-styling:
       css/team_node.css: {}
       css/news_node.css: {}
       css/taxonomy.css: {}
+      css/clients.css: {}
+  js:
+    js/main.js: { }

@@ -11,7 +11,9 @@ ckeditor5-stylesheets:
   - css/ck5style.css
 
 stylesheets-remove:
-  - 'web/themes/contrib/bootstrap5/dist/bootstrap/5.3.2/scss/_pagination.scss'
+  - themes/contrib/bootstrap5/dist/bootstrap/5.3.2/scss/_pagination.scss
+  - '@bootstrap5/dist/bootstrap/5.3.2/scss/_pagination.scss'
+  - _pagination.scss
 
 
 regions:

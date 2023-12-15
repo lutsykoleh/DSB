@@ -17,6 +17,19 @@
       padding: 0;
       flex-direction: row !important;
       justify-content: space-between;
+      .block-social-media-links-block{
+        .social-media-links--platforms{
+          li{
+            a{
+              svg{
+                path{
+                  color:$light-blue;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

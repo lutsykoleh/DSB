@@ -1,3 +1,4 @@
+@import "variables";
 .page{
   .main-content{
     main{
@@ -8,30 +9,31 @@
               .layout--onecol{
                 .layout__region--content{
                   .block-field-blocknodeprojectstitle{
-                    margin-top: -31px;
+                    margin: -14px auto 0px;
+
+                    background-color: $white;
                     span{
-                      font-size:2em;
-                      background-color: white;
-                      padding: 0px 5px;
+                      display:flex;
+                      justify-content: start;
                       text-transform: uppercase;
-                    }
-                    @media(max-width:500px){
-                      margin-top: -25px;
-                      span{
-                        font-size: 1.5em;
-                      }
+                      font-weight: bold;
                     }
                   }
-                  margin-bottom: 50px;
-                }
-              }
-              .layout--twocol-section{
-                .layout__region--first{
                   .block-field-blocknodeprojectsfield-project-image{
-                    margin-bottom: 30px;
+                    padding: 0px 0px 50px 40px;
+                    float: right;
+                  }
+                  .block-field-blocknodeprojectsbody{
+                    margin-top: 50px;
+                    p{
+                      font-size: 16px;
+                      text-align: start;
+                    }
                   }
                   .block-field-blocknodeprojectsfield-tags{
-                    margin-bottom: 15px;
+                    display:flex;
+                    justify-content: start;
+                    margin-bottom: 50px;
 
                     a {
                       text-decoration: none;
@@ -52,15 +54,21 @@
                     a[href="/taxonomy/term/4"] {
                       color: #28a9e0;
                     }
-                  }
-                }
-                .layout__region--second{
-                  .block-field-blocknodeprojectsbody{
-                    .field{
-                      p{
-                        font-size: 16px;
-                        font-weight: 500;
-                      }
+
+                    a[href="/services/tags/web-development"] {
+                      color: #1bbc9b;
+                    }
+
+                    a[href="/services/tags/app-development"] {
+                      color: #e84c3d;
+                    }
+
+                    a[href="/services/tags/php-development"] {
+                      color: #9b58b5;
+                    }
+
+                    a[href="/services/tags/drupal-project"] {
+                      color: #28a9e0;
                     }
                   }
                 }

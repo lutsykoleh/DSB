@@ -1,38 +1,62 @@
-.page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col {
+.page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px; }
-  .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-field-project-image {
-    margin-bottom: 20px;
+  .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-project-image {
+    margin-bottom: 5px;
     width: 100%; }
-  .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-title {
+  .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-title {
     font-size: 25px; }
-  .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-field-tags {
+  .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags {
     margin-bottom: 15px; }
-    .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-field-tags a {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a {
       text-decoration: none; }
-    .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/1"] {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/services/tags/web-development"] {
       color: #1bbc9b; }
-    .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/2"] {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/services/tags/app-development"] {
       color: #e84c3d; }
-    .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/3"] {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/services/tags/php-development"] {
       color: #9b58b5; }
-    .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/4"] {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/services/tags/drupal-project"] {
       color: #28a9e0; }
-  .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-view-node {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/1"] {
+      color: #1bbc9b; }
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/2"] {
+      color: #e84c3d; }
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/3"] {
+      color: #9b58b5; }
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-field-tags a[href="/taxonomy/term/4"] {
+      color: #28a9e0; }
+  .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-view-node {
     background-color: #373645;
     cursor: pointer;
     padding: 5px 10px;
     text-align: center;
     align-items: center;
     margin-bottom: 10px; }
-    .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-view-node a {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-view-node a {
       text-transform: uppercase;
       color: #fff;
       text-decoration: none;
       font-size: 14px; }
-    .page .main-content main .block-system .contextual-region .view-all-projects .view-content .views-row .views-col .views-field-view-node:hover {
+    .page .main-content main .block-system .views-element-container .view-all-projects .view-content .views-row .views-col .views-field-view-node:hover {
       background-color: #2c2b37; }
+.page .main-content main .block-system .views-element-container .view-all-projects .pager .pagination {
+  background-color: transparent;
+  margin: 60px auto;
+  max-width: 1250px;
+  justify-content: center; }
+  .page .main-content main .block-system .views-element-container .view-all-projects .pager .pagination .page-link {
+    padding: 6px 12px;
+    color: #000;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent; }
+  .page .main-content main .block-system .views-element-container .view-all-projects .pager .pagination .page-item.disabled {
+    display: none; }
+  .page .main-content main .block-system .views-element-container .view-all-projects .pager .pagination .page-item.is-active a, .page .main-content main .block-system .views-element-container .view-all-projects .pager .pagination .page-item.active a {
+    background-color: #cccccc;
+    z-index: 1; }
 
 /*# sourceMappingURL=projects.css.map */

@@ -4,7 +4,7 @@
   .main-content{
     main{
       .block-system{
-        .contextual-region{
+        .views-element-container{
           .view-all-projects{
             .view-content{
               .views-row{
@@ -14,6 +14,7 @@
                 }
               }
             }
+            @include pagination;
           }
         }
       }

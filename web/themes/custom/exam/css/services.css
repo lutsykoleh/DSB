@@ -15,36 +15,52 @@
     width: 100%;
     height: 1px;
     background-image: linear-gradient(to right, #cccccc 42%, transparent 40%, transparent 58%, #cccccc 42%); }
-.page .main-content main .block-system .contextual-region .view-all-services .view-content .views-row .views-col {
+.page .main-content main .block-system .views-element-container .view-all-services .view-content .views-row .views-col {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px; }
-  .page .main-content main .block-system .contextual-region .view-all-services .view-content .views-row .views-col .views-field-field-images {
+  .page .main-content main .block-system .views-element-container .view-all-services .view-content .views-row .views-col .views-field-field-images {
     height: 120px;
     margin-bottom: 20px; }
-  .page .main-content main .block-system .contextual-region .view-all-services .view-content .views-row .views-col .views-field-title {
+  .page .main-content main .block-system .views-element-container .view-all-services .view-content .views-row .views-col .views-field-title {
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 5px; }
-  .page .main-content main .block-system .contextual-region .view-all-services .view-content .views-row .views-col .views-field-body {
+  .page .main-content main .block-system .views-element-container .view-all-services .view-content .views-row .views-col .views-field-body {
     text-align: center;
     color: #cccccc;
     text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 25px; }
-  .page .main-content main .block-system .contextual-region .view-all-services .view-content .views-row .views-col .views-field-view-node {
+  .page .main-content main .block-system .views-element-container .view-all-services .view-content .views-row .views-col .views-field-view-node {
     background-color: #6e9bca;
     cursor: pointer;
     padding: 5px 10px;
     text-align: center;
     align-items: center; }
-    .page .main-content main .block-system .contextual-region .view-all-services .view-content .views-row .views-col .views-field-view-node a {
+    .page .main-content main .block-system .views-element-container .view-all-services .view-content .views-row .views-col .views-field-view-node a {
       text-transform: uppercase;
       color: #fff;
       text-decoration: none;
       font-size: 14px; }
-    .page .main-content main .block-system .contextual-region .view-all-services .view-content .views-row .views-col .views-field-view-node:hover {
+    .page .main-content main .block-system .views-element-container .view-all-services .view-content .views-row .views-col .views-field-view-node:hover {
       background-color: #5b8ec3; }
+.page .main-content main .block-system .views-element-container .view-all-services .pager .pagination {
+  background-color: transparent;
+  margin: 60px auto;
+  max-width: 1250px;
+  justify-content: center; }
+  .page .main-content main .block-system .views-element-container .view-all-services .pager .pagination .page-link {
+    padding: 6px 12px;
+    color: #000;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent; }
+  .page .main-content main .block-system .views-element-container .view-all-services .pager .pagination .page-item.disabled {
+    display: none; }
+  .page .main-content main .block-system .views-element-container .view-all-services .pager .pagination .page-item.is-active a, .page .main-content main .block-system .views-element-container .view-all-services .pager .pagination .page-item.active a {
+    background-color: #cccccc;
+    z-index: 1; }
 
 /*# sourceMappingURL=services.css.map */

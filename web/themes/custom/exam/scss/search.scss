@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixin";
 .page{
   .main-content{
     .region{
@@ -67,6 +68,9 @@
             }
           }
         }
+      }
+      .pager{
+        @include pagination
       }
     }
   }

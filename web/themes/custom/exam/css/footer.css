@@ -13,5 +13,7 @@
       padding: 0;
       flex-direction: row !important;
       justify-content: space-between; }
+      .page footer .region-footer .block-social-media-links-block .social-media-links--platforms li a svg path {
+        color: #6e9bca; }
 
 /*# sourceMappingURL=footer.css.map */

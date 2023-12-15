@@ -1,48 +1,31 @@
+@import "variables";
 .page{
   .main-content{
     main{
-      .region{
+      .region-content{
         .block-system-main-block{
-          article.node--service-full{
+          .node--service{
             .node__content{
-              .layout--onecol{
-                .layout__region--content{
-                  .block-field-blocknodeservicetitle{
-                    margin-top: -31px;
-                    span{
-                      font-size:2em;
-                      background-color: white;
-                      padding: 0px 5px;
-                      text-transform: uppercase;
-                    }
-                    @media(max-width:500px){
-                      margin-top: -25px;
-                      span{
-                        font-size: 1.5em;
-                      }
-                    }
-                  }
-                  margin-bottom: 50px;
+              .block-field-blocknodeservicetitle{
+                margin: -14px auto 0px;
+                background-color: $white;
+                span{
+                  display:flex;
+                  justify-content: start;
+                  text-transform: uppercase;
+                  font-weight: bold;
                 }
               }
-              .layout--twocol-section{
-                .layout__region--first{
-                  .block-field-blocknodeservicefield-images{
-                    margin-bottom: 30px;
-                  }
-                  .block-field-blocknodeservicecreated{
-                    font-size:20px;
-                  }
-                }
-                .layout__region--second{
-                  .block-field-blocknodeservicebody{
-                    .field{
-                      p{
-                        font-size: 16px;
-                        font-weight: 500;
-                      }
-                    }
-                  }
+              .block-field-blocknodeservicefield-images{
+                padding: 0px 0px 50px 40px;
+                float: right;
+              }
+              .block-field-blocknodeservicebody{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                p{
+                  font-size: 16px;
+                  text-align: start;
                 }
               }
             }

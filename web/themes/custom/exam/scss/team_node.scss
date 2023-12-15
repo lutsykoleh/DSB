@@ -23,23 +23,42 @@
                     }
                   }
                 }
-                .block-field-blocknodeteamfield-team-img{
-                  margin-bottom: 20px;
+              }
+              .layout--twocol-section{
+                .layout__region--first{
+                  .block-field-blocknodeteamfield-team-img{
+                    margin-bottom: 10px;
+                  }
+                  .block-field-blocknodeteamfield-team-posi{
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                  }
+                  .block-field-blocknodeteamfield-team-social {
+                    text-align: start;
+                    margin-left: 50px;
+                    .social-media-links--platforms{
+                      li{
+                        a{
+                          svg{
+                            color:$light-blue;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .block-extra-field-blocknodeteamflag-like {
+                    text-align: end;
+                    margin-top: -31px;
+                    margin-right: 10px;
+                    a {
+                      margin-right: 45px;
+                    }
+                  }
                 }
-                .block-field-blocknodeteamfield-team-posi{
-                  font-size: 16px;
-                  margin-bottom: 15px;
-                }
-                .block-field-blocknodeteamfield-team-social {
-                  text-align: start;
-                  margin-left: 15px;
-                }
-                .block-extra-field-blocknodeteamflag-like {
-                  text-align: end;
-                  margin-top: -31px;
-                  margin-right: 10px;
-                  a {
-                    margin-right: 45px;
+                .layout__region--second{
+                  .block-field-blocknodeteambody{
+                    margin-top: 30px;
+                    margin-bottom:50px;
                   }
                 }
               }
