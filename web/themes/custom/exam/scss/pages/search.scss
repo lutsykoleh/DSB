@@ -1,5 +1,6 @@
-@import "variables";
-@import "mixin";
+@import "../utils/mixin";
+@import "../utils/variables";
+// styles for the search results page
 .page{
   .main-content{
     .region{

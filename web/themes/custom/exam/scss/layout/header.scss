@@ -1,9 +1,10 @@
-@import "variables";
+@import "../utils/variables";
 
 .page {
   header {
     display: block;
 
+    // global styles for header
     .header-menu {
       z-index: 2;
       width: 1250px;
@@ -90,7 +91,7 @@
                 }
 
                 &:first-child {
-                  background-image: url("../images/Homepage-menu.png");
+                  background-image: url("../../images/Homepage-menu.png");
                   background-repeat: no-repeat;
                   font-size: 0;
                   width: 28px;
@@ -143,7 +144,7 @@
                   input {
                     border-radius: 0;
                     border: 1px solid $gray;
-                    background-image: url("../images/search.svg");
+                    background-image: url("../../images/search.svg");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 21px 21px;
@@ -159,7 +160,7 @@
         }
       }
     }
-
+    // styles for a header that has a position fixed class
     .header-menu.position-fixed {
       left: 50%;
       transform: translate(-50%, -50%);
@@ -249,7 +250,7 @@
                 }
 
                 &:first-child {
-                  background-image: url("../images/Homepage-menu.png");
+                  background-image: url("../../images/Homepage-menu.png");
                   background-repeat: no-repeat;
                   font-size: 0;
                   width: 28px;
@@ -303,7 +304,7 @@
                   input {
                     border-radius: 0;
                     border: 1px solid $gray;
-                    background-image: url("../images/search.svg");
+                    background-image: url("../../images/search.svg");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 21px 21px;
@@ -319,7 +320,7 @@
         }
       }
     }
-
+    // styles for header-background which is located on the homepage
     .header-background {
       top: 0;
 
@@ -378,7 +379,7 @@
     }
   }
 }
-
+// styles for brand block
 .block-system-branding-block {
   .navbar-brand {
     height: 115px;
@@ -412,7 +413,7 @@
   }
 }
 
-
+// responsive for header
 @media(max-width: 1252px) {
   .page {
     header {
@@ -536,6 +537,7 @@
 @media(max-width: 992px) {
   .page {
     header {
+      // position-fixed disable styles and burger menu styling
       .header-menu.position-fixed{
         position: static !important;
         margin:0;

@@ -1,4 +1,6 @@
-@import "mixin";
+@import "../utils/mixin";
+@import "../utils/variables";
+// styles for the service taxonomy page
 .taxonomy-term{
   .block-views-blockservice-term-block-1{
     .view-service-term{

@@ -1,5 +1,7 @@
-@import "variables";
-@import "mixin";
+@import "../utils/mixin";
+@import "../utils/variables";
+
+// stylization of the contact page
 .page{
   .main-content{
     main{

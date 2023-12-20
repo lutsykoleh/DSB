@@ -1,6 +1,7 @@
-@import "variables";
-@import "mixin";
+@import "../utils/variables";
+@import "../utils/mixin";
 
+// styles for front-page
 
 body.path-frontpage {
   .page {
@@ -15,6 +16,7 @@ body.path-frontpage {
           article {
             .layout {
               .layout__region {
+                // styles for the about block
                 .block-views-blockabout-block-1 {
                   h2 {
                     span:not(.field--label-hidden) {
@@ -56,7 +58,7 @@ body.path-frontpage {
                     }
                   }
                 }
-
+                // styles for the service block
                 .block-views-blockservice-block-block-1 {
                   h2 {
                     @include homepage-title
@@ -78,7 +80,7 @@ body.path-frontpage {
                     }
                   }
                 }
-
+                // styles for the project block
                 .block-views-blockprojects-block-block-1 {
                   position: relative;
 
@@ -123,7 +125,7 @@ body.path-frontpage {
                     @include pagination
                   }
                 }
-
+                // styles for the team block
                 .block-views-blockteam-block-block-1 {
                   margin-top: 30px;
 
@@ -148,7 +150,7 @@ body.path-frontpage {
                     }
                   }
                 }
-
+                // styles for the news block
                 .block-views-blocknews-block-block-1 {
                   max-width: 1250px;
                   position: relative;
@@ -230,7 +232,7 @@ body.path-frontpage {
 
                 }
               }
-
+              // styles for the clients slider block
               .block-views-blockclients-block-block-1 {
                 h2 {
                   margin-top: 33px;

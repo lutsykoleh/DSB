@@ -1,17 +1,21 @@
-@import "mixin";
-@import "variables";
+@import "../utils/mixin";
+@import "../utils/variables";
+// stylization of the service page
 .page{
   .main-content{
     main{
       .block-system{
+        h2{
+          span:not(.field--label-hidden){
+            @include homepage-title
+          }
+        }
         .views-element-container{
-          .view-all-projects{
+          .view-all-services{
             .view-content{
               .views-row{
-                text-align: center;
                 .views-col {
-                  text-align:center;
-                  @include project-card;
+                  @include service-card;
                   margin-bottom: 30px;
                 }
               }

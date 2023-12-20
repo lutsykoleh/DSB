@@ -1,5 +1,6 @@
-@import "mixin";
-@import "variables";
+@import "../utils/mixin";
+@import "../utils/variables";
+// stylization of the news page
 .page{
   .main-content{
     main{
@@ -19,6 +20,7 @@
               }
             }
             @include pagination;
+            // styles for the search form
             .view-filters {
               margin-bottom: 0px;
               .form--inline {
@@ -51,6 +53,7 @@
                 }
               }
             }
+            // styles for the news card block
             .view-empty{
               font-size: 20px;
               padding-bottom: 75px;

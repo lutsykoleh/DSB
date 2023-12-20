@@ -1,5 +1,8 @@
-@import "mixin";
-@import "variables";
+@import "utils/mixin";
+@import "utils/variables";
+// stylization of global styles
+
+// adding a mixin for all titles
 .page {
   .main-content {
     container{
@@ -16,10 +19,12 @@
   }
 }
 
+// remove padding for paragraphs
 p{
   margin-bottom:0 !important;
 }
 
+//centering the row
 .row{
   margin-right: auto !important;
   margin-left:auto !important;

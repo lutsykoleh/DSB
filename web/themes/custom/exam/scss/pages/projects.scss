@@ -1,20 +1,18 @@
-@import "mixin";
-@import "variables";
+@import "../utils/mixin";
+@import "../utils/variables";
+// styles for the project page
 .page{
   .main-content{
     main{
       .block-system{
-        h2{
-          span:not(.field--label-hidden){
-            @include homepage-title
-          }
-        }
         .views-element-container{
-          .view-all-services{
+          .view-all-projects{
             .view-content{
               .views-row{
+                text-align: center;
                 .views-col {
-                  @include service-card;
+                  text-align:center;
+                  @include project-card;
                   margin-bottom: 30px;
                 }
               }

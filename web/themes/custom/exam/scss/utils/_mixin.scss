@@ -1,5 +1,7 @@
-@import "variables";
+@import "../utils/variables";
 
+
+// mixin for the details/read more button
 @mixin button-more($bg-color) {
   background-color: $bg-color;
   cursor: pointer;
@@ -17,6 +19,7 @@
   }
 }
 
+// mixin for the line in the middle of the title
 @mixin homepage-title {
   position: relative;
   overflow: hidden;
@@ -47,7 +50,7 @@
   }
 }
 
-
+// mixin card
 @mixin service-card {
   display: flex;
   flex-direction: column;
@@ -72,7 +75,6 @@
     @include button-more($light-blue);
   }
 }
-
 @mixin project-card {
   display: flex;
   flex-direction: column;
@@ -128,7 +130,6 @@
     margin-bottom: 10px;
   }
 }
-
 @mixin team-card {
   display: flex;
   flex-direction: column;
@@ -183,7 +184,6 @@
   }
 
 }
-
 @mixin news-card {
   .node__content {
     > div:nth-child(1) {
@@ -453,7 +453,8 @@
   }
 }
 
-  @mixin input {
+// mixin for inputs that are in contact us
+@mixin input {
     input {
       width: 95%;
       border-radius: 0;
@@ -465,6 +466,7 @@
     }
   }
 
+// mixin for pagination
 @mixin pagination{
   .pager {
     .pagination {
