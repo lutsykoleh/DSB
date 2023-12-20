@@ -178,6 +178,7 @@
 
           .collapse:not(.show) {
             display: none;
+            transition: none;
           }
 
           .region-header {
@@ -563,19 +564,41 @@
           margin-top: 10px;
           .container.d-flex{
             max-width:100%;
-          }
-          .navbar-toggler {
-            margin-left: auto;
-            margin-right: 15px;
-          }
+            .navbar-toggler {
+              margin: 2px 15px 10px auto;
+              z-index: 60;
+            }
 
-          .navbar-collapse.show {
-            margin-top:12px;
-            .region-nav-main {
-              ul.navbar-nav {
-                li {
-                  .is-active {
-                    padding: 15px 0;
+            .navbar-collapse.show {
+              margin-top: 0;
+              transition:none;
+              .region-nav-main {
+                .navigation {
+                  ul.navbar-nav {
+                    display: block;
+
+                    li {
+                      margin: 0;
+                      font-size: 16px;
+
+                      .nav-link {
+                        padding: 15px 0;
+                        text-transform: uppercase;
+                      }
+                      .nav-link.is-active {
+                        padding: 16px 0;
+                        border-bottom: none;
+                      }
+
+                      &:first-child {
+                        background-image: none;
+                        width: auto;
+                        height: auto;
+                        font-size: 16px;
+                        padding: 0;
+                        margin: 0;
+                      }
+                    }
                   }
                 }
               }

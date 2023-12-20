@@ -1,21 +1,28 @@
 .page .main-content main .block-system h2 {
   padding-top: 1px;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
   text-align: center;
-  text-transform: uppercase;
-  color: #000; }
-  @media (max-width: 500px) {
-    .page .main-content main .block-system h2 {
-      font-size: 1em; } }
-  .page .main-content main .block-system h2::before {
-    z-index: -1;
+  padding: .2em 0;
+  color: #373645; }
+  .page .main-content main .block-system h2::after, .page .main-content main .block-system h2::before {
     content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-image: linear-gradient(to right, #cccccc 42%, transparent 40%, transparent 58%, #cccccc 42%); }
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #cccccc;
+    background-clip: border-box;
+    background-clip: content-box;
+    border-bottom: 1px solid #cccccc; }
+  .page .main-content main .block-system h2::after {
+    left: .5em;
+    margin: 0 -50% 0 0; }
+  .page .main-content main .block-system h2::before {
+    left: -.5em;
+    margin: 0 0 0 -50%; }
 .page .main-content main .block-system .views-element-container .view-news-block .view-content .views-row .views-col {
   margin-bottom: 30px; }
   .page .main-content main .block-system .views-element-container .view-news-block .view-content .views-row .views-col .node__content > div:nth-child(1) {
@@ -166,7 +173,8 @@
         margin: 0;
         border: none; }
         .page .main-content main .block-system .views-element-container .view-news-block .view-content .views-row .views-col .node__content > div:nth-child(2) .layout__region--second .block-field-blocknodenewstitle {
-          margin: 0 0 15px 0; }
+          margin: 0 0 15px 0;
+          text-align: center; }
         .page .main-content main .block-system .views-element-container .view-news-block .view-content .views-row .views-col .node__content > div:nth-child(2) .layout__region--second .block-field-blocknodenewsbody {
           margin: 0 10px 5px; }
         .page .main-content main .block-system .views-element-container .view-news-block .view-content .views-row .views-col .node__content > div:nth-child(2) .layout__region--second .block-extra-field-blocknodenewslinks {

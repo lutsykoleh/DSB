@@ -1,22 +1,33 @@
 .page .main-content container main .block-system h2 span:not(.field--label-hidden) {
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
   text-align: center;
-  text-transform: uppercase;
-  color: #000; }
-  @media (max-width: 500px) {
-    .page .main-content container main .block-system h2 span:not(.field--label-hidden) {
-      font-size: 1em; } }
-  .page .main-content container main .block-system h2 span:not(.field--label-hidden)::before {
-    z-index: -1;
+  padding: .2em 0;
+  color: #373645; }
+  .page .main-content container main .block-system h2 span:not(.field--label-hidden)::after, .page .main-content container main .block-system h2 span:not(.field--label-hidden)::before {
     content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-image: linear-gradient(to right, #cccccc 42%, transparent 40%, transparent 58%, #cccccc 42%); }
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #cccccc;
+    background-clip: border-box;
+    background-clip: content-box;
+    border-bottom: 1px solid #cccccc; }
+  .page .main-content container main .block-system h2 span:not(.field--label-hidden)::after {
+    left: .5em;
+    margin: 0 -50% 0 0; }
+  .page .main-content container main .block-system h2 span:not(.field--label-hidden)::before {
+    left: -.5em;
+    margin: 0 0 0 -50%; }
 
 p {
   margin-bottom: 0 !important; }
+
+.row {
+  margin-right: auto !important;
+  margin-left: auto !important; }
 
 /*# sourceMappingURL=global.css.map */

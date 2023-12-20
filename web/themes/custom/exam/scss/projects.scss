@@ -8,7 +8,9 @@
           .view-all-projects{
             .view-content{
               .views-row{
+                text-align: center;
                 .views-col {
+                  text-align:center;
                   @include project-card;
                   margin-bottom: 30px;
                 }

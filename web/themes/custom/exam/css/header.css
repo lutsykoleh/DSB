@@ -107,7 +107,8 @@
     .page header .header-menu.position-fixed nav .container {
       padding: 0; }
       .page header .header-menu.position-fixed nav .container .collapse:not(.show) {
-        display: none; }
+        display: none;
+        transition: none; }
       .page header .header-menu.position-fixed nav .container .region-header {
         display: flex; }
       .page header .header-menu.position-fixed nav .container .navbar-collapse.show {
@@ -293,13 +294,30 @@
       margin-top: 10px; }
       .page header .header-menu .navbar .container.d-flex {
         max-width: 100%; }
-      .page header .header-menu .navbar .navbar-toggler {
-        margin-left: auto;
-        margin-right: 15px; }
-      .page header .header-menu .navbar .navbar-collapse.show {
-        margin-top: 12px; }
-        .page header .header-menu .navbar .navbar-collapse.show .region-nav-main ul.navbar-nav li .is-active {
-          padding: 15px 0; }
+        .page header .header-menu .navbar .container.d-flex .navbar-toggler {
+          margin: 2px 15px 10px auto;
+          z-index: 60; }
+        .page header .header-menu .navbar .container.d-flex .navbar-collapse.show {
+          margin-top: 0;
+          transition: none; }
+          .page header .header-menu .navbar .container.d-flex .navbar-collapse.show .region-nav-main .navigation ul.navbar-nav {
+            display: block; }
+            .page header .header-menu .navbar .container.d-flex .navbar-collapse.show .region-nav-main .navigation ul.navbar-nav li {
+              margin: 0;
+              font-size: 16px; }
+              .page header .header-menu .navbar .container.d-flex .navbar-collapse.show .region-nav-main .navigation ul.navbar-nav li .nav-link {
+                padding: 15px 0;
+                text-transform: uppercase; }
+              .page header .header-menu .navbar .container.d-flex .navbar-collapse.show .region-nav-main .navigation ul.navbar-nav li .nav-link.is-active {
+                padding: 16px 0;
+                border-bottom: none; }
+              .page header .header-menu .navbar .container.d-flex .navbar-collapse.show .region-nav-main .navigation ul.navbar-nav li:first-child {
+                background-image: none;
+                width: auto;
+                height: auto;
+                font-size: 16px;
+                padding: 0;
+                margin: 0; }
       .page header .header-menu .navbar .region-nav-additional {
         display: flex;
         justify-content: space-between; }

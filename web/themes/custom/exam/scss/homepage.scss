@@ -1,21 +1,16 @@
 @import "variables";
 @import "mixin";
 
-.page {
-  .main-content {
-    .container {
-      max-width: 1250px;
 
-      main {
-        align-items: center;
-        text-align: center;
+body.path-frontpage {
+  .page {
+    .main-content {
+      .container {
+        max-width: 1250px;
 
-        .block-system-main-block {
-          h2 {
-            span.field--name-title {
-              display: none;
-            }
-          }
+        main {
+          align-items: center;
+          text-align: center;
 
           article {
             .layout {
@@ -111,6 +106,10 @@
                       .views-row {
                         gap: 16px;
                         justify-content: center;
+                        @media(max-width: 630px) {
+                          gap: 16px 0;
+                          grid-template-columns: 1fr;
+                        }
 
                         .views-col {
                           background-color: $white;
@@ -120,6 +119,7 @@
                         }
                       }
                     }
+
                     @include pagination
                   }
                 }
@@ -171,10 +171,11 @@
 
                   .view-news-block {
                     .view-filters {
-                      padding-top:10px;
+                      padding-top: 10px;
+
                       .form--inline {
                         display: flex;
-                        margin-top: 0px;
+                        margin-top: 0;
                         background-color: $bg-gray;
                         max-width: 424px;
 
@@ -219,7 +220,7 @@
                       }
                     }
 
-                    .view-empty{
+                    .view-empty {
                       font-size: 20px;
                       padding-bottom: 75px;
                       margin-top: 50px;
@@ -251,36 +252,38 @@
 
 
 @media(max-width: 800px) {
-  .page {
-    .main-content {
-      .container {
-        max-width: 1250px;
+  body.path-frontpage{
+    .page {
+      .main-content {
+        .container {
+          max-width: 1250px;
 
-        main {
-          .block-system-main-block {
-            article {
-              .layout {
-                .layout__region {
-                  .block-views-blockabout-block-1 {
-                    margin-top: 50px;
-                    margin-bottom: 50px;
+          main {
+            .block-system-main-block {
+              article {
+                .layout {
+                  .layout__region {
+                    .block-views-blockabout-block-1 {
+                      margin-top: 50px;
+                      margin-bottom: 50px;
 
-                    .view-about {
-                      .view-content {
-                        .views-row {
-                          .views-field-title {
-                            font-size: 20px;
-                            font-weight: bold;
-                          }
+                      .view-about {
+                        .view-content {
+                          .views-row {
+                            .views-field-title {
+                              font-size: 20px;
+                              font-weight: bold;
+                            }
 
-                          .views-field-body {
-                            color: $gray;
-                            font-size: 14px;
-                          }
+                            .views-field-body {
+                              color: $gray;
+                              font-size: 14px;
+                            }
 
-                          .views-field-view-node {
-                            @include button-more($light-blue);
-                            margin: 12px 0;
+                            .views-field-view-node {
+                              @include button-more($light-blue);
+                              margin: 12px 0;
+                            }
                           }
                         }
                       }
@@ -298,37 +301,39 @@
 
 
 @media(max-width: 420px) {
-  .page {
-    .main-content {
-      .container {
-        max-width: 1250px;
+  body.path-frontpage{
+    .page {
+      .main-content {
+        .container {
+          max-width: 1250px;
 
-        main {
-          .block-system-main-block {
-            article {
-              .layout {
-                .layout__region {
-                  .block-views-blockabout-block-1 {
+          main {
+            .block-system-main-block {
+              article {
+                .layout {
+                  .layout__region {
+                    .block-views-blockabout-block-1 {
 
-                    margin-top: 50px;
-                    margin-bottom: 50px;
+                      margin-top: 50px;
+                      margin-bottom: 50px;
 
-                    .view-about {
-                      .view-content {
-                        .views-row {
-                          .views-field-title {
-                            font-size: 16px;
-                            font-weight: bold;
-                          }
+                      .view-about {
+                        .view-content {
+                          .views-row {
+                            .views-field-title {
+                              font-size: 16px;
+                              font-weight: bold;
+                            }
 
-                          .views-field-body {
-                            color: $gray;
-                            font-size: 13px;
-                          }
+                            .views-field-body {
+                              color: $gray;
+                              font-size: 13px;
+                            }
 
-                          .views-field-view-node {
-                            @include button-more($light-blue);
-                            margin: 12px 0;
+                            .views-field-view-node {
+                              @include button-more($light-blue);
+                              margin: 12px 0;
+                            }
                           }
                         }
                       }
@@ -345,37 +350,39 @@
 }
 
 @media(max-width: 370px) {
-  .page {
-    .main-content {
-      .container {
-        max-width: 1250px;
+  body.path-frontpage{
+    .page {
+      .main-content {
+        .container {
+          max-width: 1250px;
 
-        main {
-          .block-system-main-block {
-            article {
-              .layout {
-                .layout__region {
-                  .block-views-blockabout-block-1 {
-                    margin-top: 50px;
-                    margin-bottom: 50px;
+          main {
+            .block-system-main-block {
+              article {
+                .layout {
+                  .layout__region {
+                    .block-views-blockabout-block-1 {
+                      margin-top: 50px;
+                      margin-bottom: 50px;
 
-                    .view-about {
-                      .view-content {
-                        .views-row {
-                          .views-field-title {
-                            font-size: 20px;
-                            font-weight: bold;
-                          }
+                      .view-about {
+                        .view-content {
+                          .views-row {
+                            .views-field-title {
+                              font-size: 20px;
+                              font-weight: bold;
+                            }
 
-                          .views-field-body {
-                            color: $gray;
-                            font-size: 12px;
-                          }
+                            .views-field-body {
+                              color: $gray;
+                              font-size: 12px;
+                            }
 
-                          .views-field-view-node {
-                            @include button-more($light-blue);
-                            margin: 12px 0;
-                            font-size: 14px;
+                            .views-field-view-node {
+                              @include button-more($light-blue);
+                              margin: 12px 0;
+                              font-size: 14px;
+                            }
                           }
                         }
                       }

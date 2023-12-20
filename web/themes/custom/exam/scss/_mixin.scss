@@ -19,24 +19,34 @@
 
 @mixin homepage-title {
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
   text-align: center;
-  text-transform: uppercase;
-  color: $black;
+  padding: .2em 0;
+  color: $dark-blue;
 
-  @media(max-width: 500px){
-    font-size:1em;
+  &::after, &::before{
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: $gray;
+  background-clip: border-box;
+  background-clip: content-box;
+  border-bottom: 1px solid $gray;
   }
-  &::before {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-image: linear-gradient(to right, $gray 42%, transparent 40%, transparent 58%, $gray 42%);
+  &::after{
+    left: .5em;
+    margin: 0 -50% 0 0;
+  }
+  &::before{
+    left: -.5em;
+    margin: 0 0 0 -50%;
   }
 }
+
 
 @mixin service-card {
   display: flex;
@@ -67,6 +77,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   .views-field-field-project-image {
     margin-bottom: 5px;
     width: 100%;
@@ -392,6 +403,7 @@
 
           .block-field-blocknodenewstitle {
             margin: 0 0 15px 0;
+            text-align: center;
           }
 
           .block-field-blocknodenewsbody {

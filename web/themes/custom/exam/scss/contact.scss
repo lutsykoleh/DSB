@@ -5,24 +5,14 @@
     main{
       .region-content{
         .block-system-main-block{
-          article.node--contact-us-full{
+          .node--page-full{
             .node__content{
-              .layout--onecol{
-                margin-bottom: 40px;
-                .layout__region--content{
-                  .block-field-blocknodecontact-ustitle{
-                    margin-top: -30px;
-                    span{
-                      font-size: 2em;
-                    }
-                  }
-                }
-              }
               .layout--twocol-section{
+                margin-top: 50px;
                 .layout__region--first{
                   .block-webform{
                     form{
-                      border-radius: 0px;
+                      border-radius: 0;
                       .form-item-name{
                         @include input
                       }
@@ -67,9 +57,9 @@
                 }
                 .layout__region--second{
                   margin-bottom: 100px;
-                  .block-field-blocknodecontact-usbody{
+                  .block-field-blocknodepagebody{
                     text-align: start;
-                    margin-bottom:39px;
+                    margin-bottom:37px;
                   }
                   .block-field-blocknodecontact-usfield-map{
                     padding: 0;
